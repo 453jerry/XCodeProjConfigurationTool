@@ -1,22 +1,3 @@
-# XcodeProj Configuration Tool
-
-Modify xcodeproj via the YAML configuration file
-
-## How to use
-
-Dependence: [xcodeproj](https://www.bing.com/ck/a?!&&p=53a8e6046d8c3dbbJmltdHM9MTY3MzY1NDQwMCZpZ3VpZD0yMjJmYjEwNC0xZTQ1LTY3NzgtMTI0NS1hMzZjMWYyMzY2YmMmaW5zaWQ9NTE4Mw&ptn=3&hsh=3&fclid=222fb104-1e45-6778-1245-a36c1f2366bc&psq=ruby+xcodeproj&u=a1aHR0cHM6Ly9ydWJ5Z2Vtcy5vcmcvZ2Vtcy94Y29kZXByb2ovdmVyc2lvbnMvMS4yMS4w&ntb=1)
-
-### Execute
-
-Command line: `ruby xcodeproj_config.rb.rb XCDPEPROJ_PATH CONFIG_FILE`
-
-```shell
-ruby xcodeproj_config.rb.rb '/Users/jerry/Desktop/XcodProjTest/Test.xcodeproj' Example.yaml
-```
-
-### Config file
-
-```yaml
 build_setting:
   project:                                              # Setup build setting to sepcified target
     LD_RUNPATH_SEARCH_PATHS:                            # Name of setting
@@ -46,4 +27,3 @@ build_phase:
     - tragets:
       - XcodProjTest                                    # Add source file to specified target
       file: "/Users/jerry/Desktop/XcodProjTest/bb.c"
-```
